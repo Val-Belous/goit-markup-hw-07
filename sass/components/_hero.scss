@@ -1,0 +1,30 @@
+/* Hero */
+
+.hero {
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-img.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  color: var(--second-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: var(--secondary-ls);
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -112,6 +112,13 @@
   color: var(--second-color);
 }
 
+.footer__button {
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .footer__icon {
   fill: var(--second-color);
   margin-left: 10px;

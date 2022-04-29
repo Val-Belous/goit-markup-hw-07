@@ -7,9 +7,6 @@
 // Base styles
 @import './base/base';
 
-// Btn
-@import './base/btn';
-
 // Header
 @import './layouts/header';
 
@@ -20,4 +17,4 @@
 @import './layouts/footer';
 
 // Vendors
-@import './vendors/vendors';
+@import './utils/vendors';

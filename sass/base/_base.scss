@@ -4,10 +4,6 @@ body {
   color: var(--title-text-color);
 }
 
-// .page {
-//   background-color: var(--second-color);
-// }
-
 button {
   font-family: inherit;
 }
@@ -49,8 +45,10 @@ img {
   align-items: center;
 }
 
-.socials__item:not(:last-child) {
-  margin-right: 10px;
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .socials__link {
@@ -63,19 +61,19 @@ img {
   border-radius: 50%;
 
   transition: background-color var(--animation);
-}
 
-.socials__link:focus,
-.socials__link:hover {
-  background-color: var(--accent-color);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
 
 .socials__icon {
   fill: #afb1b8;
   transition: fill var(--animation);
-}
 
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-  fill: var(--second-color);
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--second-color);
+  }
 }

@@ -1,7 +1,7 @@
 /* Hero */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-hero);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -13,7 +13,7 @@
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   color: var(--second-color);
 
   font-weight: 900;

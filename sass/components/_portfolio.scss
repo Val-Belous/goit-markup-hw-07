@@ -11,11 +11,12 @@
 
 .filter__item {
   margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.filter__item:last-child {
-  margin-right: 0;
-}
 // end Buttons
 
 .gallery {
@@ -35,15 +36,13 @@
   display: block;
 
   transition: box-shadow var(--animation);
-}
 
-.gallery__link:hover,
-.gallery__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-
-/* Overlay */
 
 .gallery__box {
   position: relative;
@@ -67,11 +66,11 @@
   background-color: var(--accent-color);
 
   padding: 63px 24px;
-}
 
-.gallery__link:hover .gallery__text,
-.gallery__link:focus .gallery__text {
-  transform: translateY(0);
+  .gallery__link:hover &,
+  .gallery__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .gallery__description {
